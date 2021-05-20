@@ -19,3 +19,4 @@ You can know the coverage of your test using:
 ```console
 go test -cover
 ```
+More info: https://blog.golang.org/slices-intro
