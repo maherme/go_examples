@@ -5,3 +5,4 @@ Some examples and code written in Go for didactic purpose
 - [Integers](Integers) : integers. Examples documentation.
 - [Iteration](Iteration): for loop. Benchmarking.
 - [Arrays and Slices](ArraysSlices) : arrays. Slices (make, append and len). Test coverage. reflect.DeepEqual.
+- [Structs, Methods and Interfaces](StructsMethodsInterfaces) : structs. Methods. Interfaces. Table based tests.
