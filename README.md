@@ -8,3 +8,4 @@ Some examples and code written in Go for didactic purpose
 - [Structs, Methods and Interfaces](StructsMethodsInterfaces) : structs. Methods. Interfaces. Table based tests.
 - [Pointers and Errors](PointersErrors) : pointers. Errors. Nil. Errcheck.
 - [Maps](Maps) : maps. Errors that are constants.
+- [Dependency Injection](DependencyInjection) : dependency injection.
