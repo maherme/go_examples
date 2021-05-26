@@ -10,3 +10,4 @@ Some examples and code written in Go for didactic purpose
 - [Maps](Maps) : maps. Errors that are constants.
 - [Dependency Injection](DependencyInjection) : dependency injection.
 - [Mocking](Mocking) : mocking. Spies.
+- [Concurrency](Concurrency) : concurrency. goroutines. Anonymous functions. Channels. Race conditions.
