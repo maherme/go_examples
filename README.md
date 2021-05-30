@@ -12,3 +12,4 @@ Some examples and code written in Go for didactic purpose
 - [Mocking](Mocking) : mocking. Spies.
 - [Concurrency](Concurrency) : concurrency. goroutines. Anonymous functions. Channels. Race conditions.
 - [Select](Select) : select. time.After. time.Since. httptest. defer.
+- [Reflection](Reflection) : reflect package.
