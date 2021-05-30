@@ -2,6 +2,7 @@ package main
 
 import "reflect"
 
+// function that takes a struct x and calls fn for all strings fields found inside.
 func walk(x interface{}, fn func(input string)) {
 	val := getValue(x)
 
