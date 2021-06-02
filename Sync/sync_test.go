@@ -1,6 +1,9 @@
 package counter
 
-import "testing"
+import (
+	"sync"
+	"testing"
+)
 
 func TestCounter(t *testing.T) {
 	t.Run("incrementing the counter 3 times leaves it at 3", func(t *testing.T) {
@@ -10,6 +13,24 @@ func TestCounter(t *testing.T) {
 		counter.Inc()
 
 		assertCounter(t, counter, 3)
+	})
+
+	t.Run("it runs safely concurrently", func(t *testing.T) {
+		wantedCount := 1000
+		counter := Counter{}
+
+		var wg sync.WaitGroup
+		wg.Add(wantedCount) // set the number of goroutines to wait for.
+
+		for i := 0; i < wantedCount; i++ {
+			go func(w *sync.WaitGroup) {
+				counter.Inc()
+				w.Done() // goroutines calls Done when finished.
+			}(&wg)
+		}
+		wg.Wait() // used to block until all goroutines have finished.
+
+		assertCounter(t, counter, wantedCount)
 	})
 }
 
