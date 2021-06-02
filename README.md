@@ -13,3 +13,4 @@ Some examples and code written in Go for didactic purpose
 - [Concurrency](Concurrency) : concurrency. goroutines. Anonymous functions. Channels. Race conditions.
 - [Select](Select) : select. time.After. time.Since. httptest. defer.
 - [Reflection](Reflection) : reflect package.
+- [Sync](Sync) : sync. Mutex. Waitgroup. go vet. 
